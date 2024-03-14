@@ -33,7 +33,7 @@ const server = http.createServer(app);
 
 app.use(
   cors({
-    origin: ["https://main--monumental-smakager-0a48af.netlify.app"],
+    origin: ["https://fastidious-bubblegum-4fffca.netlify.app"],
     methods: ["GET", "POST","PUT","DELETE"],
     credentials: true,
     // origin:"*"
