@@ -91,7 +91,7 @@ app.post("/order", async(req,res )=>{
     })
    
     const options = {
-        amount:req.body.amount,
+        amount:req.body.amount * 100,
         currency:req.body.currency,
         receipt:req.body.receiptID
     };
