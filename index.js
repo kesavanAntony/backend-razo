@@ -46,16 +46,16 @@ const connection = mysql.createConnection({
   // password: process.env.PASSWORD,
   // database: process.env.DB_DBNAME,
   // port: process.env.DB_PORT,
-  // host : "localhost",
-  // user : "root",
-  // password : "root123",
-  // database : "razotransutility",
-  // port : 3306
-  host: process.env.DB_HOST,
-  user: process.env.DB_USERNAME,
-  password:process.env.PASSWORD,
-  database:process.env.DB_DBNAME,
-  port: process.env.DB_PORT,
+  host : "localhost",
+  user : "root",
+  password : "root123",
+  database : "razotransutility",
+  port : 3306
+  // host: process.env.DB_HOST,
+  // user: process.env.DB_USERNAME,
+  // password:process.env.PASSWORD,
+  // database:process.env.DB_DBNAME,
+  // port: process.env.DB_PORT,
  
 });
 
@@ -97,6 +97,7 @@ app.post("/order", async(req,res )=>{
     };
     console.log(options)
     const order = await razorpay.orders.create(options)
+    console.log(order)
 
     if (!order){
       return res.status(500).send("error")
