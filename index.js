@@ -46,16 +46,16 @@ const connection = mysql.createConnection({
   // password: process.env.PASSWORD,
   // database: process.env.DB_DBNAME,
   // port: process.env.DB_PORT,
-  host : "localhost",
-  user : "root",
-  password : "root123",
-  database : "razotransutility",
-  port : 3306
-  // host: process.env.DB_HOST,
-  // user: process.env.DB_USERNAME,
-  // password:process.env.PASSWORD,
-  // database:process.env.DB_DBNAME,
-  // port: process.env.DB_PORT,
+  // host : "localhost",
+  // user : "root",
+  // password : "root123",
+  // database : "razotransutility",
+  // port : 3306,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  password:process.env.PASSWORD,
+  database:process.env.DB_DBNAME,
+  port: process.env.DB_PORT,
  
 });
 
